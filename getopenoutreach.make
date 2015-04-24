@@ -2,8 +2,8 @@ core = "7.x"
 api = "2"
 
 projects[drupal][type] = core
-#projects[openoutreach][type] = profile
-#projects[openoutreach][version] = 1.17
+projects[openoutreach][type] = profile
+projects[openoutreach][version] = 1.17
 
 # Modules from the Praxis git repos
 
