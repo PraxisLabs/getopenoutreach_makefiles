@@ -1,0 +1,52 @@
+core = "7.x"
+api = "2"
+
+projects[drupal][type] = core
+#projects[openoutreach][type] = profile
+#projects[openoutreach][version] = 1.17
+
+# Modules from the Praxis git repos
+
+projects[getopenoutreach_theme_settings][version] = "1.x-dev"
+projects[getopenoutreach_theme_settings][type] = "module"
+projects[getopenoutreach_theme_settings][download][type] = "git"
+projects[getopenoutreach_theme_settings][download][url] = "https://github.com/PraxisLabs/getopenoutreach_theme_settings.git"
+projects[getopenoutreach_theme_settings][download][revision] = "112da01299fc1535ca0037694cfa8e1cd65786b6"
+
+projects[getopenoutreach_panels_settings][version] = "1.x-dev"
+projects[getopenoutreach_panels_settings][type] = "module"
+projects[getopenoutreach_panels_settings][download][type] = "git"
+projects[getopenoutreach_panels_settings][download][url] = "https://github.com/PraxisLabs/getopenoutreach_panels_settings.git"
+projects[getopenoutreach_panels_settings][download][revision] = "1bcbb38a60236f604ac93a4e5d246a2002ac181e"
+
+# Contrib modules
+projects[file_entity][version] = 2.0-beta1
+projects[flexslider][version] = 2.0-alpha3
+projects[jquery_update][version] = 2.5
+projects[markdown][version] = 1.2
+projects[media][version] = 2.0-alpha4
+projects[media_youtube][version] = 2.0-rc5
+projects[paranoia][version] = 1.4
+projects[piwik][version] = 2.7
+projects[radix_layouts][version] = 3.3
+projects[rules][version] = 2.9
+projects[views_bulk_operations][version] = 3.2
+
+# Contrib theme
+projects[kalatheme][type] = "theme"
+projects[kalatheme][version] = "4.0-alpha1"
+projects[getopenoutreach_panels_settings][download][type] = "git"
+projects[getopenoutreach_panels_settings][download][branch] = "7.x-4.x"
+projects[kalatheme][patch][] = "goo_kalatheme_misc.patch"
+
+# Libraries
+
+libraries[flexslider][download][type] = "git"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider.git"
+libraries[flexslider][download][tag] = "2.4.0"
+libraries[flexslider][destination] = "libraries/flexslider"
+
+
+
+
+

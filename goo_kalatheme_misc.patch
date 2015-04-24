@@ -1,0 +1,66 @@
+diff --git a/includes/fapi.inc b/includes/fapi.inc
+index 8730db2..f0df35f 100644
+--- a/includes/fapi.inc
++++ b/includes/fapi.inc
+@@ -24,7 +24,7 @@ function kalatheme_form($variables) {
+ 
+ /**
+  * Implements hook_element_info_alter().
+- */
++ *
+ function kalatheme_element_info_alter(&$elements) {
+   foreach ($elements as &$element) {
+     $element['#process'][] = 'kalatheme_process_element';
+@@ -33,6 +33,7 @@ function kalatheme_element_info_alter(&$elements) {
+     }
+   }
+ }
++*/
+ 
+ /**
+  * Implements template_process_element().
+diff --git a/includes/views.inc b/includes/views.inc
+index 8254684..49a7ac8 100644
+--- a/includes/views.inc
++++ b/includes/views.inc
+@@ -44,7 +44,8 @@ function kalatheme_preprocess_views_view_grid(&$variables) {
+   $variables['gridsize'] = kalatheme_get_grid_size();
+   $responsive_tiers = array('xs', 'sm', 'lg');
+   foreach ($responsive_tiers as $tier) {
+-    if (!$variables['options']['responsive_toggle']) {
++    // A variable is considered empty if it does not exist or if its value equals FALSE
++    if (empty($variables['options']['responsive_toggle'])) {
+       $variables['options']['columns_' . $tier] = 1;
+     }
+     if ($variables['gridsize'] % $variables['options']['columns_' . $tier] === 0) {
+@@ -55,7 +56,8 @@ function kalatheme_preprocess_views_view_grid(&$variables) {
+   if ($variables['gridsize'] % $variables['options']['columns'] === 0) {
+     $variables['md'] = $variables['gridsize'] / $variables['options']['columns'];
+     // We need to do ths too.
+-    if (!$variables['options']['responsive_toggle']) {
++    // A variable is considered empty if it does not exist or if its value equals FALSE
++    if (empty($variables['options']['responsive_toggle'])) {
+       $variables['lg'] = $variables['gridsize'] / $variables['options']['columns'];
+     }
+   }
+diff --git a/templates/core/page.tpl.php b/templates/core/page.tpl.php
+index 89fbc84..b221be1 100644
+--- a/templates/core/page.tpl.php
++++ b/templates/core/page.tpl.php
+@@ -143,10 +143,12 @@
+         </div>
+       </div> <!-- /.section, /#top-content -->
+ 
+-      <div id="content">
+-        <div class="column <?php $no_panels ? print 'container' : ''; ?>">
+-          <?php print render($page['content']); ?>
+-        </div>
++      <div class="container">
++        <div id="content">
++          <div class="column <?php $no_panels ? print 'container' : ''; ?>">
++            <?php print render($page['content']); ?>
++          </div>
++        </div> <!-- /.container -->
+       </div> <!-- /.section, /#content -->
+ 
+     </main><!-- /#main -->
