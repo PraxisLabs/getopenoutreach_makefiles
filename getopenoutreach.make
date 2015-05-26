@@ -36,6 +36,7 @@ projects[user_limit][download][branch] = "7.x-1.x"
 
 ; Standard contrib modules
 projects[file_entity][version] = 2.0-beta1
+projects[file_entity][patch][] = "https://www.drupal.org/files/issues/Fix_file_entity_file_download-2351691-1.patch"
 projects[flexslider][version] = 2.0-alpha3
 projects[jquery_update][version] = 2.5
 projects[markdown][version] = 1.2
