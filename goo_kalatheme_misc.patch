@@ -64,3 +64,23 @@ index 89fbc84..b221be1 100644
        </div> <!-- /.section, /#content -->
  
      </main><!-- /#main -->
+diff --git a/template.php b/template.php
+index a833d05..865ee09 100644
+--- a/template.php
++++ b/template.php
+@@ -171,7 +171,14 @@ function kalatheme_process_page(&$variables) {
+       drupal_add_js($base['scheme'] . ":" . KALATHEME_BOOTSTRAP_JS, 'external');
+       // Add the CSS.
+       $css = ($library === 'default') ? KALATHEME_BOOTSTRAP_CSS : kalatheme_get_bootswatch_theme($library)->cssCdn;
+-      drupal_add_css($base['scheme'] . ":" . $css, 'external');
++//  See https://github.com/drupalprojects/kalatheme/issues/176
++//      drupal_add_css($base['scheme'] . ":" . $css, 'external');
++      if (strpos($css, 'http') <> 0) {
++        drupal_add_css($base['scheme'] . ":" . $css, 'external');
++      }
++      else {
++        drupal_add_css($css, 'external');
++      }
+     }
+   }
+   $font_awesome_active = FALSE;
