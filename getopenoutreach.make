@@ -42,6 +42,7 @@ projects[jquery_update][version] = 2.5
 projects[markdown][version] = 1.2
 projects[media][version] = 2.0-alpha4
 projects[media_youtube][version] = 2.0-rc5
+projects[navbar][version] = 1.6
 projects[paranoia][version] = 1.4
 projects[piwik][version] = 2.7
 projects[radix_layouts][version] = 3.3
