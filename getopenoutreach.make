@@ -5,6 +5,8 @@ projects[drupal][type] = core
 projects[openoutreach][type] = profile
 projects[openoutreach][version] = 1.22
 
+includes[navbar] = "navbar.make"
+
 ; Modules from the Praxis git repos
 
 projects[getopenoutreach_theme_settings][version] = "1.x-dev"
