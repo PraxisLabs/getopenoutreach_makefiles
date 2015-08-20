@@ -3,7 +3,9 @@ api = "2"
 
 projects[drupal][type] = core
 projects[openoutreach][type] = profile
-projects[openoutreach][version] = 1.22
+projects[openoutreach][download][tag] = 7.x-1.23
+projects[openoutreach][download][type] = git
+projects[openoutreach][download][url] = "http://git.drupal.org/project/openoutreach.git"
 
 includes[navbar] = "navbar.make"
 
@@ -37,24 +39,24 @@ projects[user_limit][download][url] = "git://git.drupal.org/project/user_limit.g
 projects[user_limit][download][branch] = "7.x-1.x"
 
 ; Standard contrib modules
-projects[file_entity][version] = 2.0-beta1
-projects[file_entity][patch][] = "https://www.drupal.org/files/issues/Fix_file_entity_file_download-2351691-1.patch"
-projects[flexslider][version] = 2.0-alpha3
-projects[jquery_update][version] = 2.5
+projects[file_entity][version] = 2.0-beta2
+projects[flexslider][version] = 2.0-rc1
+projects[jquery_update][version] = 2.6
 projects[markdown][version] = 1.2
-projects[media][version] = 2.0-alpha4
+projects[media][version] = 2.0-beta1
 projects[media_youtube][version] = 2.0-rc5
 projects[navbar][version] = 1.6
-projects[paranoia][version] = 1.4
+projects[paranoia][version] = 1.5
 projects[piwik][version] = 2.7
-projects[radix_layouts][version] = 3.3
+projects[radix_layouts][version] = 3.4
 projects[rules][version] = 2.9
-projects[views_bulk_operations][version] = 3.2
+projects[views_bulk_operations][version] = 3.3
 
 ; Contrib theme
 projects[kalatheme][type] = "theme"
 projects[kalatheme][download][type] = "git"
-projects[kalatheme][download][branch] = "7.x-4.x"
+projects[kalatheme][download][tag] = "7.x-4.0-alpha2"
+projects[kalatheme][download][url] = "http://git.drupal.org/project/kalatheme.git"
 projects[kalatheme][patch][] = "goo_kalatheme_misc.patch"
 
 ; Libraries
