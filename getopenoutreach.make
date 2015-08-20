@@ -42,6 +42,7 @@ projects[user_limit][download][branch] = "7.x-1.x"
 projects[file_entity][version] = 2.0-beta2
 projects[flexslider][version] = 2.0-rc1
 projects[jquery_update][version] = 2.6
+projects[honeypot][version] = 1.19
 projects[markdown][version] = 1.2
 projects[media][version] = 2.0-beta1
 projects[media_youtube][version] = 2.0-rc5
