@@ -62,6 +62,10 @@ projects[kalatheme][download][tag] = "7.x-4.0-alpha2"
 projects[kalatheme][download][url] = "http://git.drupal.org/project/kalatheme.git"
 projects[kalatheme][patch][] = "goo_kalatheme_misc.patch"
 
+; Additional contrib themes
+
+projects[mayo][version] = 2.6
+
 ; Libraries
 
 libraries[flexslider][download][type] = "git"
