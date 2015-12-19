@@ -58,9 +58,8 @@ projects[views_bulk_operations][version] = 3.3
 ; Contrib theme
 projects[kalatheme][type] = "theme"
 projects[kalatheme][download][type] = "git"
-projects[kalatheme][download][tag] = "7.x-4.0-alpha2"
+projects[kalatheme][download][branch] = "7.x-3.x"
 projects[kalatheme][download][url] = "http://git.drupal.org/project/kalatheme.git"
-projects[kalatheme][patch][] = "goo_kalatheme_misc.patch"
 
 ; Additional contrib themes
 
