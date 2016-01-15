@@ -39,6 +39,7 @@ projects[user_limit][download][url] = "git://git.drupal.org/project/user_limit.g
 projects[user_limit][download][branch] = "7.x-1.x"
 
 ; Standard contrib modules
+projects[bueditor][version] = 1.8
 projects[file_entity][version] = 2.0-beta2
 projects[flexslider][version] = 2.0-rc1
 projects[jquery_update][version] = 2.7
