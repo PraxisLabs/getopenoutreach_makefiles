@@ -3,7 +3,7 @@ api = "2"
 
 projects[drupal][type] = core
 projects[openoutreach][type] = profile
-projects[openoutreach][download][tag] = 7.x-1.27
+projects[openoutreach][download][tag] = 7.x-1.28
 projects[openoutreach][download][type] = git
 projects[openoutreach][download][url] = "http://git.drupal.org/project/openoutreach.git"
 
@@ -40,17 +40,17 @@ projects[user_limit][download][branch] = "7.x-1.x"
 
 ; Standard contrib modules
 projects[bueditor][version] = 1.8
-projects[file_entity][version] = 2.0-beta2
+projects[file_entity][version] = 2.0-beta3
 projects[flexslider][version] = 2.0-rc1
 projects[jquery_update][version] = 2.7
-projects[honeypot][version] = 1.21
+projects[honeypot][version] = 1.22
 projects[markdown][version] = 1.2
-projects[media][version] = 2.0-beta1
+projects[media][version] = 2.0-beta2
 projects[media_youtube][version] = 3.0
 projects[navbar][version] = 1.7
 projects[nocurrent_pass][version] = 1.0
 projects[paranoia][version] = 1.5
-projects[piwik][version] = 2.7
+projects[piwik][version] = 2.8
 projects[r4032login][version] = 1.8
 projects[radix_layouts][version] = 3.4
 projects[rules][version] = 2.9
