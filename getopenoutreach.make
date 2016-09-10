@@ -3,7 +3,7 @@ api = "2"
 
 projects[drupal][type] = core
 projects[openoutreach][type] = profile
-projects[openoutreach][download][tag] = 7.x-1.31
+projects[openoutreach][download][tag] = 7.x-1.33
 projects[openoutreach][download][type] = git
 projects[openoutreach][download][url] = "http://git.drupal.org/project/openoutreach.git"
 
@@ -50,7 +50,7 @@ projects[media_youtube][version] = 3.0
 projects[navbar][version] = 1.7
 projects[nocurrent_pass][version] = 1.0
 projects[paranoia][version] = 1.5
-projects[piwik][version] = 2.8
+projects[piwik][version] = 2.9
 projects[r4032login][version] = 1.8
 projects[radix_layouts][version] = 3.4
 projects[rules][version] = 2.9
