@@ -54,6 +54,7 @@ projects[piwik][version] = 2.9
 projects[r4032login][version] = 1.8
 projects[radix_layouts][version] = 3.4
 projects[rules][version] = 2.9
+projects[variable][version] = 2.5
 projects[views_bulk_operations][version] = 3.3
 
 ; Contrib theme
