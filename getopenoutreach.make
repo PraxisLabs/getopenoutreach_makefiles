@@ -3,7 +3,7 @@ api = "2"
 
 projects[drupal][type] = core
 projects[openoutreach][type] = profile
-projects[openoutreach][download][tag] = 7.x-1.39
+projects[openoutreach][download][tag] = 7.x-1.41
 projects[openoutreach][download][type] = git
 projects[openoutreach][download][url] = "http://git.drupal.org/project/openoutreach.git"
 
